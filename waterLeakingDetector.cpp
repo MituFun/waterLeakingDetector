@@ -146,7 +146,7 @@ int main() {
 			cout << '\t';
 			double delta = (now - lstIdelFlow) / lstIdelFlow;
 			cout << (delta > 0 ? "\033[31m+" : "\033[32m") << delta * 100 << "%\t\033[0m";
-			if (now / lstIdelFlow >= 4) {
+			if (now / lstIdelFlow >= 3) {
 				cout << "\033[31mWARNING WARNING WARNING\033[0m";
 			}
 			//for (int i = 0; i < now / lstIdelFlow; i++) {
